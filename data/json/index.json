@@ -1,0 +1,12 @@
+[
+  {"name":"Wonderwall","artist":"Oasis","id":"0070"},
+  {"name":"Hotel California","artist":"The Eagles","id":"0102"},
+  {"name":"Creep","artist":"Radiohead","id":"0077","lang":"EN"},
+  {"name":"Encore et encore","artist":"Francis Cabrel","id":"0037"},
+  {"name":"New York avec toi","artist":"Téléphone ","id":"0091"},
+  {"name":"L'amour à la plage","artist":"Niagara","id":"0369"},
+  {"name":"I love rock'n'roll","artist":"Joan Jett","id":"0048"},
+  {"name":"Un jour en France","artist":"Noir Désir","id":"0370"},
+  {"name":"Smells like teen spirit","artist":"Nirvana","id":"0064"},
+  {"name":"Coco Caline","artist":"Julien Doré","id":"0173"}
+]
