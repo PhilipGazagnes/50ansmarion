@@ -1,10 +1,34 @@
 <template>
   <div class="wrapper">
-    <h1>Concert 50 ans Marion</h1>
+    <h1 style="font-weight: bold">Concert 50 ans Marion 🎉🎸</h1>
     <div class="listpage">
       <ul class="list">
         <li
           v-for="(s, index) in songs"
+          :key="index"
+          :data-first-letter="s.name.charAt(0)"
+        >
+          <a
+            class="song"
+            :href="`https://stately-meringue-48b151.netlify.app/note/${s.id}?directory=marion`"
+            rel="nofollow"
+          >
+            <span>{{ s.name }}</span>
+            <span>{{ s.artist }}</span>
+            <img
+              class="lazy"
+              :data-src="`https://aeovnsnhjq.cloudimg.io/v7/_funlive_/artists/${s.id}.jpg?width=80&height=80`"
+              src="/blank.gif"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <h2>Et / ou ?</h2>
+    <div class="listpage">
+      <ul class="list">
+        <li
+          v-for="(s, index) in songs2"
           :key="index"
           :data-first-letter="s.name.charAt(0)"
         >
@@ -29,11 +53,13 @@
 
 <script>
 import songsJson from '../data/json/index.json';
+import songs2Json from '../data/json/index2.json';
 
 export default {
   data() {
     return {
-      songs: songsJson.sort(this.compare).filter((s) => !s.inactive),
+      songs: songsJson,
+      songs2: songs2Json,
     };
   },
   mounted() {
