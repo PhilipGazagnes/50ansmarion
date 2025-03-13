@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <h1 style="font-weight: bold">Concert 50 ans Marion 🎉🎸</h1>
+    <h1 style="font-weight: bold">⭐🎸🎉🎤⚡<br />Concert 50 ans Marion<br />⭐🎸🎉🎤⚡</h1>
     <div class="listpage">
       <ul class="list">
         <li
